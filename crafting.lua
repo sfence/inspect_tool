@@ -22,7 +22,7 @@ if minetest.get_modpath("hades_moreblocks") then
 end
 if minetest.get_modpath("hades_technic") then
   items.clu = "hades_technic:control_logic_unit"
-  items.battery = "hades_technic:battery"
+  items.battery = "hades_technic:battery_lithium"
 end
 
 minetest.register_craft({
