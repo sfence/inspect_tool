@@ -10,6 +10,7 @@ local items = {
   mcu = "mesecons_microcontroller:microcontroller0000",
   battery = "technic:battery",
   laser = "default:mese_crystal",
+  crystal = "basic_materials:energy_crystal_simple",
 }
 
 if minetest.get_modpath("hades_core") then
@@ -49,6 +50,15 @@ minetest.register_craft({
       {items.battery, "inspect_tool:hand_computer", items.battery},
       {items.mcu, items.laser, items.clu},
       {"", items.obsidian_glass, ""},
+    },
+  })
+
+minetest.register_craft({
+    output = "inspect_tool:hand_item_namer",
+    recipe = {
+      {"", items.plastic_sheet, ""},
+      {items.plastic_sheet, items.crystal, items.plastic_sheet},
+      {"", items.plastic_sheet, ""},
     },
   })
 

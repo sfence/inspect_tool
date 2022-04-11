@@ -36,7 +36,7 @@ String to be used as message.
 
 ### _inspect_msg_func = function(data, level)	
 
-	data - clicked positon or lua entity data
+	data - clicked positon or ItemStack objector lua entity data
 	level = inspection tool level
 
 Functon return value is used as message.

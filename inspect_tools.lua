@@ -31,3 +31,11 @@ minetest.register_tool("inspect_tool:hand_laser", {
     on_use = inspect_tool.inspect_tool_use,
   })
 
+minetest.register_tool("inspect_tool:hand_item_namer", {
+    description = S("Hand Item Namer"),
+    _tt_help = "Use to get name of item below in inventory.",
+    inventory_image = "inspect_tool_hand_item_namer.png",
+    
+    on_use = inspect_tool.item_namer_use,
+  })
+
